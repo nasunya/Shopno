@@ -14,7 +14,7 @@ $aqua: #505050
 $white: #fff
 $tifany: #6eeee4 
 $black: #000
-.sect 
+.section 
     padding: 90px 0px
 
     @media (max-width: 992px)
@@ -22,118 +22,16 @@ $black: #000
     @media (max-width: 480px)
         padding: 50px 0px
 
-.section
-    &__hero  
-        background-color: #eff0f2  
-        padding-top     : 25px 
-        display: flex
-        height: 100vh
-        min-height: 780px
 
-        
-     
+                                        // SECTION HERO
 
-    &__about  
-        display: flex
-        background-color: $bg-color  
-        width           : 100% 
-        flex-direction: column
-        justify-content: center
-
-    &__works  
-        background-color: #fff 
-        display: flex 
-        justify-content: center 
-        align-items: center 
-
-    &__servis
-        background-color: $bg-color  
-    &__team 
-
-        background-color: $white
-        display: flex 
-        justify-content: center 
-        align-items: center 
-    
-    &__comment  
-        display: flex
-        background-color: $bg-color 
-    
-    
-    
-    &__addit  
-        
-        display    : flex 
-        align-items: center 
-    
-    &__form  
-        display: flex 
-        align-items: center 
-        justify-content: center 
-        background: url(images/bg.jpg) center center / cover no-repeat 
-        position: relative
-        z-index: 10
-        &:before
-            content: ""
-            position: absolute
-            z-index: 100
-            background: #fafbfc
-            opacity: 0.6
-            height: 100%
-            width: 100%
-    
-    &__footer  
-        padding: 90px 0px
-        background     : #262b2e 
-        display        : flex 
-        flex-direction : column 
-        justify-content: center 
-
-
-    
-   
-
- 
-
-                            // SECTION HERO
-
-.container__hero  
-    position: relative
+.hero  
+    background-color: #eff0f2  
+    padding-top     : 25px 
     display: flex
-
-
-.header  
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-
-
+    height: 100vh
+    min-height: 780px
     
-
-.navbar-light .navbar-nav .nav-link       
-    color: $aqua
-    font-size: 20px
-    &:hover 
-        color: #27cdc3 
-        @media (max-width: 992px)
-            color: $bg-color
-
-
-.navbar-light .navbar-toggler
-    outline: 0           
-.navbar-collapse
-    @media (max-width: 992px)
-        background: #9ee5e1
-        border-radius: 10px
-.navbar-nav
-    padding: 20px     
-
-.collapse
-    justify-content: flex-end
-    font-size: 18px
-  
-.hero
     &__content 
     
         font-weight: 600 
@@ -145,12 +43,11 @@ $black: #000
         
     
     &__container 
-        display: flex 
-        flex-direction: column 
+        position: relative
+        display: flex
         align-items: center 
-        flex: 1 
         text-align: center 
-        justify-content: center 
+    
         
     &__button
         border: 1.5px solid 
@@ -188,6 +85,45 @@ $black: #000
             font-size: 25px
 
       
+
+    
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+
+.header  
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+
+
+    
+
+.navbar-light .navbar-nav .nav-link       
+    color: $aqua
+    font-size: 20px
+    &:hover 
+        color: #27cdc3 
+        @media (max-width: 992px)
+            color: $bg-color
+
+
+.navbar-light .navbar-toggler
+    outline: 0           
+.navbar-collapse
+    @media (max-width: 992px)
+        background: #9ee5e1
+        border-radius: 10px
+.navbar-nav
+    padding: 20px     
+
+.collapse
+    justify-content: flex-end
+    font-size: 18px
+  
+
     
 
 
@@ -196,7 +132,12 @@ $black: #000
 
 
 .about
-    
+    display: flex
+    background-color: $bg-color  
+    width           : 100% 
+    flex-direction: column
+    justify-content: center  
+
     &__img
         position: relative
         padding-bottom: 60px
@@ -220,13 +161,13 @@ $black: #000
                 display: block
             @media (max-width: 480px)
                 display: none
-    img
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        margin: 0 auto
-        
+            img
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                margin: 0 auto
+            
 
     &__pic
         min-height: 400px
@@ -281,13 +222,15 @@ $black: #000
                             // SECTION WORKS
 
 
-.works__item
-    margin-bottom: 18px
-    
+
 
 
 
 .works
+    background-color: #fff 
+    display: flex 
+    justify-content: center 
+    align-items: center 
     &__list 
         height: 100% 
     &__content 
@@ -302,12 +245,17 @@ $black: #000
         @media (max-width: 480px)
             min-height: 365px
          
-
+    &__item
+        margin-bottom: 18px
+    
+    
                         // SECTION SERVIS
 
 
 .servis
-   
+ 
+    background-color: $bg-color  
+     
     &__text 
         color          : #e3e3e3 
         display        : flex 
@@ -410,7 +358,7 @@ $black: #000
             font-size: 16px
         
             
-    &__text button 
+    &__button-style 
         display:flex 
         text-transform: uppercase 
         color: #e3e3e3 
@@ -442,6 +390,10 @@ $black: #000
 
 
 .team
+    background-color: $white
+    display: flex 
+    justify-content: center 
+    align-items: center 
     &__item 
         position: relative
         margin-bottom: 18px
@@ -538,6 +490,9 @@ $black: #000
                     //SECTION COMMENT
 
 .comment
+    display: flex
+    background-color: $bg-color 
+    
     &__container
         display: flex 
         flex-direction: column
@@ -627,6 +582,10 @@ $black: #000
 
 
 .addit
+    
+    display    : flex 
+    align-items: center 
+
     &__link 
         filter: grayscale(100%) 
         transition: .4s 
@@ -646,58 +605,26 @@ $black: #000
 
   
 
-
-// SECTION FOOTER
-
-.footer
-    &__desc 
-        display: flex 
-        flex-direction: column 
-        align-items: center
-        @media (max-width: 768px)
-            font-size: 14px
-         
-    &__name
-        color: #d6d7d7
-        text-transform: uppercase 
-        padding-bottom: 15px
-        @media (max-width: 768px)
-            font-size: 15px
-     
-    &__text 
-        color: #969798
-
-.social 
-    display: flex 
-    text-align: center
-    margin-bottom: 20px
-    margin-right: -4px
-    margin-left: -4px
-  
-
-    &__link
-        display: block
-        padding-right: 10px
-        color: #d6d7d7
-        font-size: 15px
-        background-color: #424648
-        margin-right: 4px
-        margin-left: 4px
-        padding: 7px
-        width: 34px
-        height: 34px
-    
-        &:hover
-            color: #081e1c
-            background-color: #6eeee3
-
-
 // SECTION FORM
 
 
 
 .form
-
+    display: flex 
+    align-items: center 
+    justify-content: center 
+    background: url(images/bg.jpg) center center / cover no-repeat 
+    position: relative
+    z-index: 10
+    &:before
+        content: ""
+        position: absolute
+        z-index: 100
+        background: #fafbfc
+        opacity: 0.6
+        height: 100%
+        width: 100%
+    
     &__bg
         z-index: 1000
 
@@ -776,7 +703,60 @@ $black: #000
         padding-bottom: 15px
         
 
+    
 
+
+// SECTION FOOTER
+
+.footer
+    padding: 90px 0px
+    background     : #262b2e 
+    display        : flex 
+    flex-direction : column 
+    justify-content: center 
+
+    &__desc 
+        display: flex 
+        flex-direction: column 
+        align-items: center
+        @media (max-width: 768px)
+            font-size: 14px
+         
+    &__name
+        color: #d6d7d7
+        text-transform: uppercase 
+        padding-bottom: 15px
+        @media (max-width: 768px)
+            font-size: 15px
+     
+    &__text 
+        color: #969798
+
+.social 
+    display: flex 
+    text-align: center
+    margin-bottom: 20px
+    margin-right: -4px
+    margin-left: -4px
+  
+
+    &__link
+        display: block
+        padding-right: 10px
+        color: #d6d7d7
+        font-size: 15px
+        background-color: #424648
+        margin-right: 4px
+        margin-left: 4px
+        padding: 7px
+        width: 34px
+        height: 34px
+    
+        &:hover
+            color: #081e1c
+            background-color: #6eeee3
+
+    
 
 address
     margin: 0
