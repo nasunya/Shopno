@@ -34,63 +34,7 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.phone').mask("+7 (999) 999-99-99", {
-		autoclear: false
-	});
-
-	$(".signup").each(function () {
-        $(this).validate({
-            rules: {
-                firstName: {
-                    required: true
-
-                },
-                phone: {
-                    required: true
-
-                },
-                email: {
-                    required: true,
-                },
-            },
-            messages: {
-                firstName: {
-                    required: ""
-
-                },
-                phone: {
-                    required: ""
-
-                },
-                email: {
-                    required: "",
-                    
-                },
-
-            },
-
-            submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url : "mail.php",
-                    data: $(form).serialize()
-                }).done(function () {
-                	$.fancybox.open({
-					  src : '#thx',
-					  type: 'inline',
-
-					  opts : {
-					    onComplete : function() {
-					    }
-					  }
-					});
-                });
-                return false;
-            }
-        });
-	});	
-
-}); //document
+}); 
 
 
 

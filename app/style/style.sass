@@ -1,19 +1,9 @@
-
 @import parts/bootstrap.min 
-@import reset
 @import mixin
-@import media
 @import _default
 @import parts/font-awesome.min
-@import parts/jquery.fancybox.min
-@import parts/select2.min
 @import parts/owl.carousel.min
 
-$bg-color: #f8fafa  
-$aqua: #505050
-$white: #fff
-$tifany: #6eeee4 
-$black: #000
 .section 
     padding: 90px 0px
 
@@ -21,56 +11,39 @@ $black: #000
         padding: 70px 0px
     @media (max-width: 480px)
         padding: 50px 0px
-
-
-                                        // SECTION HERO
-
 .hero  
-    background-color: #eff0f2  
+    background-color: $bg-color2
     padding-top     : 25px 
     display: flex
     height: 100vh
     min-height: 780px
-    
     &__content 
-    
         font-weight: 600 
         font-weight: bold 
         text-shadow: 3px 3px 10px 
         text-transform: uppercase 
         color: $aqua
         padding-bottom: 150px 
-        
-    
     &__container 
         position: relative
         display: flex
         align-items: center 
         text-align: center 
-    
-        
-    &__button
-        border: 1.5px solid 
-       
-
     &__button-contacts
         padding: 10px 35px 
         text-transform: uppercase 
-        background: #eff0f2 
+        background: $bg-color2
         letter-spacing: 2px 
         outline: 0
         border: 1px solid
         &:hover 
-            color: #27cdc3 
-            background: #959697
+            color: $electric
+            background: $bg-gray
         @media (max-width: 780px)
             padding: 8px 25px
             font-size: 13px 
-
-
     &__text--color
-        background-color: #b2f2ee!important 
-
+        background-color: $bg-world !important 
     &__text
         font-size: 50px
         font-weight: 500 
@@ -78,15 +51,10 @@ $black: #000
         text-transform: uppercase 
         color: $aqua
         display: inline-block
-
         @media (max-width: 760px)
             font-size: 35px
         @media (max-width: 480px)
             font-size: 25px
-
-      
-
-    
     &__wrap
         display: flex
         flex-direction: column
@@ -98,63 +66,51 @@ $black: #000
     left: 0
     right: 0
 
-
-    
-
 .navbar-light .navbar-nav .nav-link       
     color: $aqua
     font-size: 20px
     &:hover 
-        color: #27cdc3 
+        color: $electric
         @media (max-width: 992px)
             color: $bg-color
 
-
 .navbar-light .navbar-toggler
-    outline: 0           
+    outline: 0      
+
 .navbar-collapse
     @media (max-width: 992px)
-        background: #9ee5e1
+        background: $bg-nav
         border-radius: 10px
+
 .navbar-nav
-    padding: 20px     
+    @media (max-width: 992px)
+        padding: 20px     
 
 .collapse
     justify-content: flex-end
     font-size: 18px
   
-
-    
-
-
-
-                            // SECTION ABOUT
-
-
 .about
     display: flex
     background-color: $bg-color  
     width           : 100% 
     flex-direction: column
     justify-content: center  
-
     &__img
         position: relative
         padding-bottom: 60px
         max-width: 100%
         display: flex 
         justify-content: center
-
         &:before
             content: ""
-            background: #ebecee
+            background: $bg-before
             display: block
             width: 440px
             height: 335px
             margin-top: 32px
             position: absolute
             top: 0
-             
             @media (max-width: 992px)
                 display: none
             @media (max-width: 768px)
@@ -167,19 +123,12 @@ $black: #000
                 left: 0
                 right: 0
                 margin: 0 auto
-            
-
     &__pic
         min-height: 400px
         position: relative
         box-shadow: 0px 7px 10px #ddd   
-       
-
-
-
     &__left 
         align-items: center 
-        /* justify-content: center  */
         display: flex 
         @media (max-width: 768px)
             margin-bottom: 40px
@@ -188,12 +137,10 @@ $black: #000
         @media (max-width: 768px)
             margin: 0px
             padding: 0px 10px
-
     &__desc h3
-     
         font-size: 20px 
         text-transform: uppercase 
-        color: #646565 
+        color: $gray
         font-weight: bold 
         padding-bottom: 10px
         @media (max-width: 992px)
@@ -203,7 +150,6 @@ $black: #000
     &__desc
         @media (max-width: 768px)
             text-align: center
- 
     &__text p
 
         padding-bottom: 30px 
@@ -211,23 +157,13 @@ $black: #000
 .owl-carousel-one
     .owl-nav
         display: none
-
     .owl-item img
         width: 360px
         @media (max-width: 480px)
             width: 100%
 
-
-
-                            // SECTION WORKS
-
-
-
-
-
-
 .works
-    background-color: #fff 
+    background-color: $white
     display: flex 
     justify-content: center 
     align-items: center 
@@ -241,23 +177,15 @@ $black: #000
         @media (max-width: 992px)
             min-height: 280px
             width: 100%
-                
         @media (max-width: 480px)
             min-height: 365px
-         
     &__item
         margin-bottom: 18px
     
-    
-                        // SECTION SERVIS
-
-
 .servis
- 
     background-color: $bg-color  
-     
     &__text 
-        color          : #e3e3e3 
+        color          : $light-grey
         display        : flex 
         flex-direction : column 
         text-align     : left 
@@ -265,54 +193,39 @@ $black: #000
         padding: 0px 57px 50px 60px
         @media (max-width: 768px)
             padding: 0px 30px 30px 30px
-
-
-
-        
-
     &__modal
         text-align: left
         padding: 40px
-        background: #ccc
+        background: $tifany
         position: absolute
         top: 0
         left: 0
         right: 0
         height: 100%
         display: none
-        
-        
     &__modal-name 
         display: block
         padding-bottom: 28px
-        color: #1d4a46
+        color: $dark-grey
         font-weight: bold
         @media (max-width: 768px)
             padding-bottom: 18px 
-
     &__modal-text
         padding-bottom: 60px 
-        color: #29625e
+        color: $dark-grey
         line-height: 1.5
         @media (max-width: 992px)
-            
             padding-bottom: 30px 
             font-size: 14px
-            
-    
     &__button:hover 
         color: $white
         font-weight: bold
-        
-
     &__img 
         position: relative 
         min-height: 420px
-
     &__next 
         width: 20px 
         fill: $white
-
     &__pic
         position: relative
         min-height: 420px
@@ -321,9 +234,6 @@ $black: #000
             min-height: 250px
         @media (max-width: 460px)
             margin: 0px 20px 18px 20px
-
-    
-
     &__container
         display         : flex 
         width           : 100% 
@@ -336,7 +246,7 @@ $black: #000
                 display: none
             .servis__modal
                 display: block
-                background-color: #70f5eb
+              
     &__text p
         overflow: hidden
         text-overflow: ellipsis
@@ -345,31 +255,25 @@ $black: #000
         -webkit-line-clamp: 2
         -webkit-box-orient: vertical
         margin-bottom: 40px
-
-        
-
     &__text h4
         padding-bottom: 20px
         text-transform: uppercase 
         font-size: 20px 
         font-weight: 550 
-        color: #fff 
+        color: $white
         @media (max-width: 768px)
             font-size: 16px
-        
-            
     &__button-style 
         display:flex 
         text-transform: uppercase 
-        color: #e3e3e3 
-        background-color: #4f4f4f
+        color: $light-grey
+        background-color: $dull-grey
         text-align: left
         border: 0
-
         &:hover 
         color:#fff
     &__desc 
-        background-color: #4f4f4f
+        background-color: $dull-grey
         opacity: 0.8
         display: flex
 
@@ -378,16 +282,8 @@ $black: #000
     max-width: 100%
     max-height: 100%
 
-
 .fa-arrow-right 
     padding-left: 10px
-
-
-    
-
-
-                    // SECTION TEAM
-
 
 .team
     background-color: $white
@@ -398,7 +294,6 @@ $black: #000
         position: relative
         margin-bottom: 18px
         height: 100%
-        
         @media (max-width: 480px)
             margin: 0px 20px 18px 20px
         &:hover
@@ -409,96 +304,69 @@ $black: #000
                 padding: 32px 
                 @media (max-width: 992px)
                     padding: 20px
-            
-
     &__text
         padding-bottom: 30px
         @media (max-width: 992px)
             padding-bottom: 7px
             font-size: 14px
-                
         @media (max-width: 600px)
             padding-bottom: 20px
             font-size: 16px
-
         @media (max-width: 460px)
             padding-bottom: 7px
             font-size: 14px
-
     &__hover 
         position: absolute 
         top: 40% 
         left: 5% 
         right: 5% 
         bottom: 8%
-        background: #71f5ea 
+        background: $tifany
         opacity: 0 
         transform: scale(.8) 
         @media (max-width: 992px)
             top: 30%
         @media (max-width: 600px)
             top: 40%
-
-    
     &__name  
         font-size: 18px 
         padding-bottom: 16px
         @media (max-width: 992px)
             padding-bottom: 7px
-         
-            
         @media (max-width: 600px)
             font-size: 18px 
             padding-bottom: 16px
-
-
-   
-
     &__name--prof 
         font-size: 15px 
         text-transform: none 
         font-style: italic 
-
     &__name--people 
         color: $black
         font-weight: 800 
         font-size: 18px 
-        
         @media (max-width: 992px)
             font-size: 12px 
-        // @media (max-width: 480px)
-        //     font-size: 12px
-
-
-
     &__social-link
         padding-right: 12px
         color: #2e6f6a
         font-size: 15px
         &:hover
             color: $white
-
     &__social-list
         display: flex 
-
     &__img 
         min-height: 440px
         @media (max-width: 992px)
             min-height: 280px
             width: 100%
 
-                    //SECTION COMMENT
-
 .comment
     display: flex
     background-color: $bg-color 
-    
     &__container
         display: flex 
         flex-direction: column
         justify-content: center
-        
-
     &__img
         position: relative
         @media (max-width: 768px)
@@ -506,7 +374,7 @@ $black: #000
             margin-bottom: 70px
         &:before
             content: ""
-            background: #ebecee
+            background: $bg-before
             display: block
             width: 408px
             height: 335px
@@ -527,88 +395,56 @@ $black: #000
             right: 0
             margin: 0 auto
             box-shadow: 0px 10px 10px #ddd
-
     &__desc 
         display        : flex 
         flex-direction : column 
         align-items    : center 
         justify-content: center 
-
-
     &__right 
         display: flex 
-       
-
     &__right--grey
         width: 100%
         min-height: 335px
-        background: #ebecee
+        background: $bg-before
         display: flex
         margin-top: 32px
-
     &__star
         text-align: center
-
     &__pic
         width: 320px !important
         height: 420px
         position: relative
-
     &__text 
         align-items: center
         text-align: center
         padding: 0 70px
-    
         p
             padding-bottom: 30px
-
     &__subtitle
         padding-bottom: 20px
-
     &__info
         margin-bottom: 30px  
         @media (max-width: 992px)
             display: flex
             flex-direction: column 
-
 .fa-star
     padding-right: 5px
     color: #f2da3b
 
-
-
-
-// SECTION ADDIT
-
-
 .addit
-    
     display    : flex 
     align-items: center 
-
     &__link 
         filter: grayscale(100%) 
         transition: .4s 
         cursor: pointer 
-        
-        
-
         &:hover 
             filter: grayscale(0) 
-        
     &__icons
         padding: 30px 
         display: flex
         align-items: center
    
-      
-
-  
-
-// SECTION FORM
-
-
-
 .form
     display: flex 
     align-items: center 
@@ -620,50 +456,40 @@ $black: #000
         content: ""
         position: absolute
         z-index: 100
-        background: #fafbfc
+        background: $pale-white
         opacity: 0.6
         height: 100%
         width: 100%
-    
     &__bg
         z-index: 1000
-
     &__wrap-desc
         background: rgb(37, 36, 36) 
         background: rgba(58, 76, 88, 0.88)
         flex-direction: column 
         min-height: 444px
-    
     &__wrap--padding
         padding: 20px 
         @media (max-width: 992px)
             margin-bottom: 30px
-
-
     &__group 
         display: inline-block
         padding-bottom: 15px
         width: 100%
         &:last-child
             padding-bottom: 0px
-            
-        
-
     &__input-desc
         border: 0 
-        border-bottom: 1px solid #a3abb0 
+        border-bottom: 1px solid $pale-grey
         width: 100%
         height: 50px 
         background-color: rgba(51, 48, 48, 0) 
         color: #fff
-
     &__massage-desc 
         border: 0 
-        border-bottom: 1px solid #a3abb0 
+        border-bottom: 1px solid $pale-grey
         width: 100%
         height: 135px 
         background-color: rgba(51, 48, 48, 0) 
-
     &__button-massage 
         background-color: $tifany
         color: #2e6b66
@@ -671,106 +497,73 @@ $black: #000
         font-size: 18px 
         text-transform: uppercase 
         letter-spacing: 2px
-
         @media (max-width: 992px)
             padding: 10px 30px
             font-size: 15px 
-           
-
-
         &:hover 
-            background-color: #fff
+            background-color: $white
             color: $tifany
-
     &__place
         display: flex
         flex-direction: column
         padding: 20px 
         a
             text-decoration: none
-            color: #a3abb0
+            color: $pale-grey
             &:hover 
-                color: #fff 
-        
+                color: $white
         span
-            color: #a3abb0
+            color: $pale-grey
             text-transform: none
-
     &__fax
         padding-bottom: 17px
-
     &__email
         padding-bottom: 15px
-        
-
-    
-
-
-// SECTION FOOTER
 
 .footer
     padding: 90px 0px
-    background     : #262b2e 
+    background     : $blue-black
     display        : flex 
     flex-direction : column 
     justify-content: center 
-
     &__desc 
         display: flex 
         flex-direction: column 
         align-items: center
         @media (max-width: 768px)
             font-size: 14px
-         
     &__name
-        color: #d6d7d7
+        color: $light-cart
         text-transform: uppercase 
         padding-bottom: 15px
         @media (max-width: 768px)
             font-size: 15px
-     
     &__text 
-        color: #969798
-
+        color: $dark-cart
 .social 
     display: flex 
     text-align: center
     margin-bottom: 20px
     margin-right: -4px
     margin-left: -4px
-  
-
     &__link
         display: block
         padding-right: 10px
-        color: #d6d7d7
+        color: $light-cart
         font-size: 15px
-        background-color: #424648
+        background-color: $aquamarine
         margin-right: 4px
         margin-left: 4px
         padding: 7px
         width: 34px
         height: 34px
-    
         &:hover
-            color: #081e1c
-            background-color: #6eeee3
-
-    
-
+            color: $blue-black
+            background-color: $tifany
 address
     margin: 0
-
-    
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder  
      color: #a4acb1
-
-
-
-   
-
-
-
 
 .owl-carousel-two
     .owl-nav
@@ -778,7 +571,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
         .owl-prev, .owl-next
             width: 40px
             height: 40px
-            background: #fff !important
+            background: $white !important
             display: inline-block 
             margin: 5px
             outline: 0
@@ -791,37 +584,29 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
             span
                 display: none
             &:hover
-                background-color: #71f6eb!important
+                background-color: #71f6eb !important
             &:active
-                background-color: #fff !important
+                background-color: $white !important
             &.disabled
                 opacity: 0.3
                 &:hover
-                    background-color: #fff !important
+                    background-color: $white !important
         .owl-prev
             &:before
                 content: "\f104" !important
         .owl-next
             &:before
                 content: "\f105" !important
-
-
-    
 .owl-carousel-one button.owl-dot 
     width: 10px
     height: 10px
     border-radius: 2px
     background: #d0d0d0
     margin-right: 5px
-    
-
 .owl-dots 
     text-align: center 
-
 button.owl-dot.active
     background-color: #71f6eb
-
-
 .owl-carousel-one button.owl-dot 
     outline: 0
  
