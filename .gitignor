@@ -33,6 +33,6 @@ Thumbs.db
 bower_components
 dist
 
-# dependencies
-/node_modules
+# Node.JS
+**/node_modules
 npm-debug.log
