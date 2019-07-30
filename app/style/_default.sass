@@ -1,16 +1,4 @@
-@font-face
-    font-family: 'Bebas Neue'
-    src: url('../fonts/BebasNeueRegular.eot')
-    src: local('../fonts/Bebas Neue Regular'), local('../fonts/BebasNeueRegular'),url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),url('../fonts/BebasNeueRegular.woff') format('woff'),url('../fonts/BebasNeueRegular.ttf') format('truetype') 
-    font-weight: normal
-    font-style: normal
 
-@font-face
-    font-family: 'Bebas Neue'
-    src: url('../fonts/BebasNeueBold.eot')
-    src: local('../fonts/Bebas Neue Bold'), local('../fonts/BebasNeueBold'),url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),url('../fonts/BebasNeueBold.woff') format('woff'),url('../fonts/BebasNeueBold.ttf') format('truetype') 
-    font-weight: bold
-    font-style: normal
 
 @font-face
     font-family: 'FontAwesome'
@@ -49,12 +37,11 @@
   
 *  
   box-sizing: border-box 
- 
 
 body, html  
   height: 100% 
   width : 100% 
- 
+
 html
   font-size: 16px
 
@@ -65,12 +52,10 @@ body
   -webkit-font-smoothing : antialiased 
   -moz-osx-font-smoothing: grayscale 
 
-    
 h1, h4, h5, h6  
   font-weight: normal 
   margin     : 0 
  
-
 h1 
   font-size: 50px
   @media (max-width: 760px)
@@ -90,47 +75,27 @@ h2
   @media (max-width: 780px)
     font-size: 20px
  
-    
 button
   padding: 0px
-
-
-
-
-
+  border: 0 
+  cursor: pointer 
 
 span 
     font-size: 16px 
     text-transform: uppercase 
     color: #888888  
     @media (max-width: 992px)
-      font-size: 15px
-   
-
-
-button  
-  border: 0 
-  cursor: pointer 
+      font-size: 15px 
  
-
 ul  
   padding   : 0 
   margin    : 0 
   list-style: none 
  
-
- 
-
-
 p  
   margin       : 0 
   padding      : 0 
   font-size: 16px 
-
-
- 
-   
-
 
 .title 
   padding: 0px 0px 90px 0px
@@ -139,298 +104,11 @@ p
   @media (max-width: 480px)
     padding: 0px 0px 50px 0px
  
-
-    
 button:hover
   outline: none !important
 
 
 
-//   .owl-carousel .owl-nav button
-//         background: #fff
-//         box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 
 
-
-
-
-
-
-
-
-
-// .input,
-// .textarea,
-// input[type="text"],
-// input[type="password"],
-// textarea
-//     width: 100% 
-//     padding: 10px 16px 
-//     height: 44px
-//     border: 1px solid $grey
-//     border-radius: 3px
-//     font-size: 14px
-//     line-height: 24px
-//     box-sizing: border-box
-//     -webkit-appearance: none
-//     color: #303030
-//     background: #fff
-
-//     &:focus
-//     	border-color: $green    
-//     &.error
-//     	border-color: $red
-
-//     ::-webkit-input-placeholder
-//         color: #7F7F7F
-//         opacity: 1
-
-//     :-moz-placeholder
-//         color: #7F7F7F
-//         opacity: 1
-
-//     ::-moz-placeholder
-//         color: #7F7F7F
-//         opacity: 1
-
-//     :-ms-input-placeholder 
-//         color: #7F7F7F
-//         opacity: 1
-
-// input:-webkit-autofill,
-// input:-webkit-autofill:hover,
-// input:-webkit-autofill:focus,
-// input:-webkit-autofill:active 
-//     transition: background-color 5000s ease-in-out 0s
-//     -webkit-text-fill-color: #747474 !important
-
-
-// p
-// 	margin-bottom: 10px
-// 	font-size: 16px
-// 	line-height: 26px
-
-
-// img
-// 	border: 0
-// 	max-width: 100%
-// 	max-height: 100%
-
-
-// a
-//     text-decoration: none
-//     &:focus
-//         color: inherit
-//         text-decoration: none
-//         outline: 0
-//         outline-offset: 0
-
-
-// h1
-//     font-size: 60px
-//     line-height: 70px
-//     font-family: 'Bebas Neue'
-//     font-weight: bold
-//     margin-bottom: 8px
-
-// h2
-//     font-size: 32px
-//     line-height: 52px
-//     font-family: 'LatoMedium'
-
-
-// h3
-//     font-size: 32px
-//     text-transform: uppercase
-//     line-height: 52px
-//     font-family: 'LatoMedium'
-
-
-// h4
-//     font-family: 'Bebas Neue'
-//     font-size: 40px
-//     line-height: 40px
-//     font-weight: bold
-//     text-transform: uppercase
-    
-// h5
-//     font-family: 'LatoMedium'
-
-
-
-// .h1
-//     @extend h1
-
-// .h2
-//     @extend h2
-
-// .h3
-//     @extend h3
-    
-// .h4
-//     @extend h4
-    
-// .h5
-//     @extend h5
-
-            
-// .button
-//     position: relative
-//     display: inline-block
-//     padding: 0px 25px
-//     height: 44px
-//     border-width: 0
-//     color: #fff
-//     font-size: 14px
-//     font-weight: normal
-//     line-height: 42px
-//     text-align: center
-//     border-radius: 3px
-//     text-decoration: none
-//     cursor: pointer
-//     white-space: nowrap
-//     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5eb1f8+0,357ff1+100 */
-//     background: #5eb1f8 
-//     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 -3px 0 #2863c0 inset
-
-//     &:hover
-//         opacity: 0.9
-
-//     &--number
-//         font-size: 18px
-
-//     &--ext
-//         display: block
-//         width: 100%
-
-//     .icon
-//         vertical-align: top
-
-
-// .align
-//     &--left
-//         text-align: left !important
-
-//     &--right
-//         text-align: right !important
-
-//     &--center
-//         text-align: center !important
-
-
-// .float
-//     &--left
-//         float: left !important
-
-//     &--right
-//         float: right !important
-
-//     &--none
-//         float: none !important
-
-
-// .d
-//     &--b
-//         display: block !important
-
-//     &--n
-//         display: none !important
-
-//     &--i
-//         display: inline !important
-
-//     &--ib
-//         display: inline-block !important
-
-//     &--tc
-//         display: table-cell !important
-
-// .mt
-//     &--0
-//         margin-top: 0 !important
-//     &--60
-//         margin-top: 60px !important
-
-
-// .mb
-//     &--0
-//         margin-bottom: 0 !important
-//     &--2
-//         margin-bottom: 2px !important
-//     &--5
-//         margin-bottom: 5px !important
-//     &--8
-//         margin-bottom: 8px !important
-//     &--10
-//         margin-bottom: 10px !important
-//     &--12
-//         margin-bottom: 12px !important
-//     &--15
-//         margin-bottom: 15px !important
-//     &--18
-//         margin-bottom: 18px !important
-//     &--20
-//         margin-bottom: 20px !important
-//     &--22
-//         margin-bottom: 22px !important
-//     &--25
-//         margin-bottom: 25px !important
-//     &--28
-//         margin-bottom: 28px !important
-//     &--30
-//         margin-bottom: 30px !important
-
-// .pb
-//     &--0
-//         padding-bottom: 0 !important
-//     &--2
-//         padding-bottom: 2px !important
-//     &--5
-//         padding-bottom: 5px !important
-//     &--8
-//         padding-bottom: 8px !important
-//     &--10
-//         padding-bottom: 10px !important
-//     &--12
-//         padding-bottom: 12px !important
-//     &--15
-//         padding-bottom: 15px !important
-//     &--18
-//         padding-bottom: 18px !important
-//     &--20
-//         padding-bottom: 20px !important
-//     &--22
-//         padding-bottom: 22px !important
-//     &--25
-//         padding-bottom: 25px !important
-//     &--28
-//         padding-bottom: 28px !important
-//     &--30
-//         padding-bottom: 30px !important
-
-
-// .fz
-//     &--12
-//         font-size: 12px !important
-//     &--14
-//         font-size: 14px !important
-//     &--16
-//         font-size: 16px !important
-//     &--18
-//         font-size: 18px !important
-//     &--20
-//         font-size: 20px !important
-
-
-// .fw
-//     &--normal
-//         font-weight: normal !important
-
-//     &--bold
-//         font-weight: bold !important
-    
-        
-// .input, .textarea, input[type="text"], input[type="password"], textarea
-//     border-bottom: 1px solid #ccc
-//     border-radius: 0
