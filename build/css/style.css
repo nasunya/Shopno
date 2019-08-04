@@ -6612,7 +6612,6 @@ html {
 }
 
 body {
-  font-family: 'merriweather';
   font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -6625,10 +6624,12 @@ h1,h4,h5,h6 {
 }
 
 h1 {
+  font-family: 'montserrat-bold';
   font-size: 50px;
 }
 
 h2 {
+  font-family: 'montserrat-bold';
   padding-bottom: 125px 0px !important;
   font-size: 31px;
   font-weight: 900;
@@ -9810,6 +9811,7 @@ button:hover {
 }
 
 .hero__button-contacts {
+  font-family: 'montserrat-regular';
   padding: 10px 35px;
   text-transform: uppercase;
   background: #eff0f2;
@@ -9872,6 +9874,10 @@ button:hover {
   outline: 0;
 }
 
+.navbar-nav {
+  font-family: 'montserrat-regular';
+}
+
 .collapse {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -9896,6 +9902,10 @@ button:hover {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.about__name span {
+  font-family: 'merriweather-regular';
 }
 
 .about__img {
@@ -9954,14 +9964,15 @@ button:hover {
 }
 
 .about__desc h3 {
+  font-family: 'merriweather-bold';
   font-size: 20px;
   text-transform: uppercase;
   color: #646565;
-  font-weight: bold;
   padding-bottom: 10px;
 }
 
 .about__text p {
+  font-family: 'raleway-regular';
   padding-bottom: 30px;
 }
 
@@ -9989,6 +10000,10 @@ button:hover {
   align-items: center;
 }
 
+.works__name span {
+  font-family: 'merriweather-regular';
+}
+
 .works__list {
   height: 100%;
 }
@@ -10013,6 +10028,10 @@ button:hover {
 
 .servis {
   background-color: #f8fafa;
+}
+
+.servis__name span {
+  font-family: 'merriweather-regular';
 }
 
 .servis__text {
@@ -10047,6 +10066,7 @@ button:hover {
 }
 
 .servis__modal-name {
+  font-family: 'montserrat-bold';
   display: block;
   padding-bottom: 28px;
   color: #1d4a46;
@@ -10054,6 +10074,7 @@ button:hover {
 }
 
 .servis__modal-text {
+  font-family: 'raleway-regular';
   padding-bottom: 60px;
   color: #1d4a46;
   line-height: 1.5;
@@ -10101,6 +10122,7 @@ button:hover {
 }
 
 .servis__text p {
+  font-family: 'raleway-regular';
   overflow: hidden;
   text-overflow: ellipsis;
   max-height: 45px;
@@ -10111,14 +10133,15 @@ button:hover {
 }
 
 .servis__text h4 {
+  font-family: 'merriweather-bold';
   padding-bottom: 20px;
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 550;
   color: #fff;
 }
 
 .servis__button-style {
+  font-family: 'raleway-medium';
   text-transform: uppercase;
   color: #e3e3e3;
   background-color: #4f4f4f;
@@ -10162,6 +10185,10 @@ button:hover {
   align-items: center;
 }
 
+.team__title span {
+  font-family: 'merriweather-regular';
+}
+
 .team__item {
   position: relative;
   margin-bottom: 18px;
@@ -10179,6 +10206,7 @@ button:hover {
 }
 
 .team__text {
+  font-family: 'raleway-regular';
   padding-bottom: 30px;
 }
 
@@ -10201,12 +10229,14 @@ button:hover {
 }
 
 .team__name--prof {
+  font-family: 'merriweather-regular';
   font-size: 15px;
   text-transform: none;
   font-style: italic;
 }
 
 .team__name--people {
+  font-family: 'merriweather-bold';
   color: #000;
   font-weight: 800;
   font-size: 18px;
@@ -10239,6 +10269,10 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: #f8fafa;
+}
+
+.comment__name span {
+  font-family: 'merriweather-regular';
 }
 
 .comment__container {
@@ -10332,6 +10366,7 @@ button:hover {
 }
 
 .comment__text {
+  font-family: 'raleway-regular';
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -10451,6 +10486,7 @@ button:hover {
 }
 
 .form__input-desc {
+  font-family: 'raleway-regular';
   border: 0;
   border-bottom: 1px solid #a3abb0;
   width: 100%;
@@ -10460,6 +10496,7 @@ button:hover {
 }
 
 .form__massage-desc {
+  font-family: 'raleway-regular';
   border: 0;
   border-bottom: 1px solid #a3abb0;
   width: 100%;
@@ -10468,6 +10505,7 @@ button:hover {
 }
 
 .form__button-massage {
+  font-family: 'montserrat-regular';
   background-color: #6eeee4;
   color: #2e6b66;
   padding: 16px 40px;
@@ -10482,6 +10520,7 @@ button:hover {
 }
 
 .form__place {
+  font-family: 'raleway-regular';
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10551,12 +10590,14 @@ button:hover {
 }
 
 .footer__name {
+  font-family: 'raleway-regular';
   color: #d6d7d7;
   text-transform: uppercase;
   padding-bottom: 15px;
 }
 
 .footer__text {
+  font-family: 'raleway-medium';
   color: #969798;
 }
 
@@ -10668,19 +10709,31 @@ button.owl-dot.active {
 }
 
 @font-face {
-  font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot?v=4.7.0");src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal;
+  font-family:'merriweather-light';src:url("../fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/merriweather-light-webfont.woff2") format("woff2");font-weight:normal;font-style:normal;
 }
 
 @font-face {
-  font-family:'robotoregular';src:url("../fonts/roboto-webfont.woff2") format("woff2"), url("../fonts/roboto-webfont.woff") format("woff"), url("../fonts/roboto-webfont.ttf") format("truetype"), url("../fonts/roboto-webfont.svg#robotoregular") format("svg");font-weight:normal;font-style:normal;
+  font-family:'merriweather-regular';src:url("../fonts/merriweather-regular-webfont.woff") format("woff"), url("../fonts/merriweather-regular-webfont.woff2") format("woff2");font-weight:normal;font-style:normal;
 }
 
 @font-face {
-  font-family:'robotobold';src:url("../fonts/robotobold-webfont.woff2") format("woff2"), url("../fonts/robotobold-webfont.woff") format("woff"), url("../fonts/robotobold-webfont.ttf") format("truetype"), url("../fonts/robotobold-webfont.svg#robotobold") format("svg");font-weight:normal;font-style:normal;
+  font-family:'merriweather-bold';src:url("../fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/merriweather-bold-webfont.woff2") format("woff2");font-weight:bold;font-style:normal;
 }
 
 @font-face {
-  font-family:'robotomedium';src:url("../fonts/robotomedium-webfont.woff2") format("woff2"), url("../fonts/robotomedium-webfont.woff") format("woff"), url("../fonts/robotomedium-webfont.ttf") format("truetype"), url("../fonts/robotomedium-webfont.svg#robotomedium") format("svg");font-weight:normal;font-style:normal;
+  font-family:'montserrat-bold';src:url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2");font-weight:bold;font-style:normal;
+}
+
+@font-face {
+  font-family:'montserrat-regular';src:url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2");font-weight:normal;font-style:normal;
+}
+
+@font-face {
+  font-family:'raleway-regular';src:url("../fonts/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway-regular-webfont.woff2") format("woff2");font-weight:normal;font-style:normal;
+}
+
+@font-face {
+  font-family:'raleway-medium';src:url("../fonts/raleway-medium-webfont.woff") format("woff"), url("../fonts/raleway-medium-webfont.woff2") format("woff2");font-weight:normal;font-style:normal;
 }
 
 @font-face {

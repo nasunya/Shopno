@@ -30,6 +30,7 @@
         align-items: center 
         text-align: center 
     &__button-contacts
+        font-family: 'montserrat-regular'
         padding: 10px 35px 
         text-transform: uppercase 
         background: $bg-color2
@@ -83,6 +84,7 @@
         border-radius: 10px
 
 .navbar-nav
+    font-family: 'montserrat-regular'
     @media (max-width: 992px)
         padding: 20px     
 
@@ -96,6 +98,8 @@
     width           : 100% 
     flex-direction: column
     justify-content: center  
+    &__name span
+        font-family: 'merriweather-regular'
     &__img
         position: relative
         padding-bottom: 60px
@@ -138,10 +142,10 @@
             margin: 0px
             padding: 0px 10px
     &__desc h3
+        font-family: 'merriweather-bold'
         font-size: 20px 
         text-transform: uppercase 
         color: $gray
-        font-weight: bold 
         padding-bottom: 10px
         @media (max-width: 992px)
             font-size: 18px
@@ -151,7 +155,7 @@
         @media (max-width: 768px)
             text-align: center
     &__text p
-
+        font-family: 'raleway-regular'
         padding-bottom: 30px 
 
 .owl-carousel-one
@@ -167,6 +171,8 @@
     display: flex 
     justify-content: center 
     align-items: center 
+    &__name span
+        font-family: 'merriweather-regular'
     &__list 
         height: 100% 
     &__content 
@@ -183,7 +189,9 @@
         margin-bottom: 18px
     
 .servis
-    background-color: $bg-color  
+    background-color: $bg-color 
+    &__name span
+        font-family: 'merriweather-regular' 
     &__text 
         color          : $light-grey
         display        : flex 
@@ -204,13 +212,15 @@
         height: 100%
         display: none
     &__modal-name 
+        font-family: 'montserrat-bold'
         display: block
         padding-bottom: 28px
         color: $dark-grey
         font-weight: bold
         @media (max-width: 768px)
             padding-bottom: 18px 
-    &__modal-text
+    &__modal-text 
+        font-family: 'raleway-regular'
         padding-bottom: 60px 
         color: $dark-grey
         line-height: 1.5
@@ -248,6 +258,7 @@
                 display: block
               
     &__text p
+        font-family: 'raleway-regular'
         overflow: hidden
         text-overflow: ellipsis
         max-height: 45px
@@ -256,14 +267,15 @@
         -webkit-box-orient: vertical
         margin-bottom: 40px
     &__text h4
+        font-family: 'merriweather-bold'
         padding-bottom: 20px
         text-transform: uppercase 
         font-size: 20px 
-        font-weight: 550 
         color: $white
         @media (max-width: 768px)
             font-size: 16px
     &__button-style 
+        font-family: 'raleway-medium'
         display:flex 
         text-transform: uppercase 
         color: $light-grey
@@ -290,6 +302,8 @@
     display: flex 
     justify-content: center 
     align-items: center 
+    &__title span
+        font-family: 'merriweather-regular' 
     &__item 
         position: relative
         margin-bottom: 18px
@@ -305,6 +319,7 @@
                 @media (max-width: 992px)
                     padding: 20px
     &__text
+        font-family: 'raleway-regular'
         padding-bottom: 30px
         @media (max-width: 992px)
             padding-bottom: 7px
@@ -337,10 +352,12 @@
             font-size: 18px 
             padding-bottom: 16px
     &__name--prof 
+        font-family: 'merriweather-regular'
         font-size: 15px 
         text-transform: none 
         font-style: italic 
     &__name--people 
+        font-family: 'merriweather-bold'
         color: $black
         font-weight: 800 
         font-size: 18px 
@@ -363,6 +380,8 @@
 .comment
     display: flex
     background-color: $bg-color 
+    &__name span
+        font-family: 'merriweather-regular' 
     &__container
         display: flex 
         flex-direction: column
@@ -415,6 +434,7 @@
         height: 420px
         position: relative
     &__text 
+        font-family: 'raleway-regular'
         align-items: center
         text-align: center
         padding: 0 70px
@@ -478,6 +498,7 @@
         &:last-child
             padding-bottom: 0px
     &__input-desc
+        font-family: 'raleway-regular'
         border: 0 
         border-bottom: 1px solid $pale-grey
         width: 100%
@@ -485,12 +506,14 @@
         background-color: rgba(51, 48, 48, 0) 
         color: #fff
     &__massage-desc 
+        font-family: 'raleway-regular'
         border: 0 
         border-bottom: 1px solid $pale-grey
         width: 100%
         height: 135px 
         background-color: rgba(51, 48, 48, 0) 
     &__button-massage 
+        font-family: 'montserrat-regular'
         background-color: $tifany
         color: #2e6b66
         padding: 16px 40px
@@ -504,6 +527,7 @@
             background-color: $white
             color: $tifany
     &__place
+        font-family: 'raleway-regular'
         display: flex
         flex-direction: column
         padding: 20px 
@@ -533,12 +557,14 @@
         @media (max-width: 768px)
             font-size: 14px
     &__name
+        font-family: 'raleway-regular'
         color: $light-cart
         text-transform: uppercase 
         padding-bottom: 15px
         @media (max-width: 768px)
             font-size: 15px
     &__text 
+        font-family: 'raleway-medium'
         color: $dark-cart
 .social 
     display: flex 

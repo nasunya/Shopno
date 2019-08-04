@@ -1,3 +1,5 @@
+cutable File  39 lines (35 sloc)  361 Bytes
+    
 # Numerous always-ignore extensions
 *.bak
 *.diff
@@ -34,5 +36,5 @@ bower_components
 dist
 
 # Node.JS
-**/node_modules
+node_modules
 npm-debug.log

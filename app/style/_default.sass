@@ -1,39 +1,45 @@
-
-
 @font-face
-    font-family: 'FontAwesome'
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0')
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg')
+    font-family: 'merriweather-light'
+    src: url('../fonts/merriweather-light-webfont.woff') format('woff'),
+    url('../fonts/merriweather-light-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
-
 @font-face
-    font-family: 'robotoregular'
-    src: url('../fonts/roboto-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-webfont.woff') format('woff'),
-    url('../fonts/roboto-webfont.ttf') format('truetype'),
-    url('../fonts/roboto-webfont.svg#robotoregular') format('svg')
+    font-family: 'merriweather-regular'
+    src: url('../fonts/merriweather-regular-webfont.woff') format('woff'),
+    url('../fonts/merriweather-regular-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
-
 @font-face
-    font-family: 'robotobold'
-    src: url('../fonts/robotobold-webfont.woff2') format('woff2'),
-    url('../fonts/robotobold-webfont.woff') format('woff'),
-    url('../fonts/robotobold-webfont.ttf') format('truetype'),
-    url('../fonts/robotobold-webfont.svg#robotobold') format('svg')
+    font-family: 'merriweather-bold'
+    src: url('../fonts/merriweather-bold-webfont.woff') format('woff'),
+    url('../fonts/merriweather-bold-webfont.woff2') format('woff2')
+    font-weight: bold
+    font-style: normal
+@font-face
+    font-family: 'montserrat-bold'
+    src: url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+    url('../fonts/montserrat-bold-webfont.woff2') format('woff2')
+    font-weight: bold
+    font-style: normal
+@font-face
+    font-family: 'montserrat-regular'
+    src: url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+    url('../fonts/montserrat-regular-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
-
 @font-face
-    font-family: 'robotomedium'
-    src: url('../fonts/robotomedium-webfont.woff2') format('woff2'),
-    url('../fonts/robotomedium-webfont.woff') format('woff'),
-    url('../fonts/robotomedium-webfont.ttf') format('truetype'),
-    url('../fonts/robotomedium-webfont.svg#robotomedium') format('svg')
+    font-family: 'raleway-regular'
+    src: url('../fonts/raleway-regular-webfont.woff') format('woff'),
+    url('../fonts/raleway-regular-webfont.woff2') format('woff2')
     font-weight: normal
     font-style: normal
-
+@font-face
+    font-family: 'raleway-medium'
+    src: url('../fonts/raleway-medium-webfont.woff') format('woff'),
+    url('../fonts/raleway-medium-webfont.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal
   
 *  
   box-sizing: border-box 
@@ -41,12 +47,12 @@
 body, html  
   height: 100% 
   width : 100% 
+ 
 
 html
   font-size: 16px
 
 body  
-  font-family            : 'merriweather' 
   font-size              : 16px 
   line-height            : 1.42 
   -webkit-font-smoothing : antialiased 
@@ -57,6 +63,7 @@ h1, h4, h5, h6
   margin     : 0 
  
 h1 
+  font-family: 'montserrat-bold'
   font-size: 50px
   @media (max-width: 760px)
     font-size: 35px
@@ -64,6 +71,7 @@ h1
     font-size: 25px
 
 h2 
+  font-family: 'montserrat-bold'
   padding-bottom: 125px 0px !important 
   font-size: 31px 
   font-weight: 900 
@@ -74,13 +82,15 @@ h2
     font-size: 25px
   @media (max-width: 780px)
     font-size: 20px
- 
+
+
+  
 button
   padding: 0px
   border: 0 
   cursor: pointer 
 
-span 
+span
     font-size: 16px 
     text-transform: uppercase 
     color: #888888  
